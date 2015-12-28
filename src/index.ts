@@ -1,4 +1,4 @@
-export var curry = function (f, args?) {
+export function curry(f, args?) {
 
   args = args || [];
 
@@ -15,4 +15,4 @@ export var curry = function (f, args?) {
     return f.apply(null, args);
   }
 
-};
+}

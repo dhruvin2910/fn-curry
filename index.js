@@ -1,15 +1,16 @@
-exports.curry = function (f, args) {
+function curry(f, args) {
     args = args || [];
     if (args.length < f.length) {
         return function () {
             for (var i = 0; i < arguments.length; i++) {
                 args.push(arguments[i]);
             }
-            return exports.curry(f, args);
+            return curry(f, args);
         };
     }
     else {
         return f.apply(null, args);
     }
-};
+}
+exports.curry = curry;
 //# sourceMappingURL=index.js.map
