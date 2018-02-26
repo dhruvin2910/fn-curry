@@ -1,5 +1,5 @@
-fn-memoizer
-===========
+fn-curry
+========
 
 A Utility for JS functions to [curry](https://en.wikipedia.org/wiki/Currying).
 
